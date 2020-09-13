@@ -4,4 +4,4 @@
 .gitconfig
 Library/*
 !.gitkeep
-
+/shell01/ex05/*

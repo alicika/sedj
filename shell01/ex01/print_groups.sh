@@ -1,1 +1,1 @@
-groups $FT_USER | sed -e 's/[\ ][\ ]*/,/g'
+id $FT_USER -Gn| sed -e 's/[\ ][\ ]*/,/g' | tr -d '\n'

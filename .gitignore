@@ -10,3 +10,4 @@ Library/*
 
 CMakelists.txt
 cmake-build-debug/*
+c00/ex06/main.c

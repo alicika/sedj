@@ -1,3 +1,6 @@
 [submodule "shell01"]
 	path = shell01
 	url = git@vogsphere-v2.42tokyo.jp:vogsphere/intra-uuid-2b6fc083-2beb-4449-9901-c2c2687b4446-3310565
+[submodule "shell00"]
+	path = shell00
+	url = git@vogsphere-v2.42tokyo.jp:vogsphere/intra-uuid-662a7e43-86bb-4de4-85d3-42bb621876dc-3311257

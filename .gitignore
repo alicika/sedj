@@ -1,6 +1,8 @@
 .ssh/*
 ../.idea
 .zshrc
+.viminfo
+.vimrc
 .gitconfig
 Library/*
 !.gitkeep

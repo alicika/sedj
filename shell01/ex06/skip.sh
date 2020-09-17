@@ -1,1 +1,1 @@
-ls -l | awk '($NF % 2 ==0)'
+ls -l | awk 'NR % 2==1 {print}'

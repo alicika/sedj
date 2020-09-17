@@ -6,12 +6,12 @@ void    ft_putchar(char b)
     write(1, &b, 1);
 }
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void)
 {
     char c;
 
-    c = 'a';
-    while (c <= 'z')
+    c = '0';
+    while (c <= '9')
     {
         ft_putchar(c++);
     }
@@ -19,7 +19,7 @@ void	ft_print_alphabet(void)
 
 /*int		main(void)
 {
-    ft_print_alphabet();
+    ft_print_numbers();
     return (0);
 }
 */

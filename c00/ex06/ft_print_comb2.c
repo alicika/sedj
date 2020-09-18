@@ -20,20 +20,20 @@ void	ft_putchar(char c)
 
 int		ft_print_comb2(void)
 {
-	int a[2];
+	int hako[2];
 
-	a[0] = -1;
-	while (++a[0] <= 98)
+	hako[0] = -1;
+	while (++hako[0] <= 98)
 	{
-		a[1] = a[0];
-		while (++a[1] <= 99)
+		hako[1] = hako[0];
+		while (++hako[1] <= 99)
 		{
-			ft_putchar((a[0] / 10) + '0');
-			ft_putchar((a[0] % 10) + '0');
+			ft_putchar((hako[0] / 10) + '0');
+			ft_putchar((hako[0] % 10) + '0');
 			ft_putchar(' ');
-			ft_putchar((a[1] / 10) + '0');
-			ft_putchar((a[1] % 10) + '0');
-			if (a[0] != 98)
+			ft_putchar((hako[1] / 10) + '0');
+			ft_putchar((hako[1] % 10) + '0');
+			if (hako[0] != 98)
 			{
 				ft_putchar(',');
 				ft_putchar(' ');

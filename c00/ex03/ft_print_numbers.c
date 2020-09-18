@@ -1,25 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rkasubuc <ass@ass.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/18 09:25:46 by rkasubuc          #+#    #+#             */
+/*   Updated: 2020/09/18 09:29:14 by rkasubuc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <unistd.h>
 
-void    ft_putchar(char b)
+void	ft_putchar(char b)
 {
-    write(1, &b, 1);
+	write(1, &b, 1);
 }
 
 void	ft_print_numbers(void)
 {
-    char c;
+	char c;
 
-    c = '0';
-    while (c <= '9')
-    {
-        ft_putchar(c++);
-    }
+	c = '0';
+	while (c <= '9')
+	{
+		ft_putchar(c++);
+	}
 }
-
-/*int		main(void)
-{
-    ft_print_numbers();
-    return (0);
-}
-*/

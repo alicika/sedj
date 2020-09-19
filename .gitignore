@@ -7,7 +7,6 @@
 Library/*
 !.gitkeep
 /shell01/ex05/*
-rush01old/*
 
 CMakelists.txt
 cmake-build-debug/*

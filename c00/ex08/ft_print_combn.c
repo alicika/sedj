@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 
 void	ft_comb(int A[], int p, int w, int n, int r);
@@ -49,5 +50,3 @@ else
 int		main(void)
 {
 	ft_print_combn(3);
-	return 0;
-}

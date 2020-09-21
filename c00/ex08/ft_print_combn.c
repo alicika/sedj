@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #include <stdio.h>
 
 void	ft_comb(int A[], int p, int w, int n, int r);

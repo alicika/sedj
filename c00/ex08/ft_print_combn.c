@@ -1,52 +1,72 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_combn.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rkasubuc <a@a.fr>                          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/22 14:18:05 by rkasubuc          #+#    #+#             */
+/*   Updated: 2020/09/22 14:56:08 by rkasubuc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-void	ft_comb(int A[], int p, int w, int n, int r);
-int		ft_print_combn(int r);
+void	ft_printloop(int n, char str[], int pos, int *flg);
+void	ft_print(char str[], int pos, int nb, int *flg);
 
-int	num = 0;
-
-int		ft_print_combn(int r)
+void	ft_print_combn(int n)
 {
-	int n;
-	int K[128];
+	char	str[n - 1];
+	int		flg;
 
-	n = 9;
-	ft_comb(K, r, n-r, n, r);
-}
-
-void	ft_comb(int A[], int p, int w, int n, int r)
-{
-	if (p > 0)
+	flg = 0;
+	if (1 <= n && n <= 9)
 	{
-	int i;
-	while (i <= w)
-	{
-		A[p] = i;
-		ft_comb(A, p - 1, w - i, n, r);
+		ft_printloop(n, str, 1, &flg);
 	}
 }
-else
-{                                              /*  ★   */
-	int i, j, m;
-	num++;
-	printf("%d:\t", num);
-	m = 0;
-	for(i = 1;i <= r;i++)
+
+void	ft_printloop(int n, char str[], int pos, int *flg)
+{
+	char	nb;
+
+	nb = '0';
+	if (2 <= pos)
 	{
-		for(j = 0;j < A[i];j++, m++)
+		nb = str[pos - 2] + 1;
+	}
+	while (nb <= '9')
+	{
+		if (pos == n)
 		{
-		printf("0");
-		printf("1");
-		m++;
+			ft_print(str, pos, nb, flg);
 		}
-	}
-	for(;m < n;m++)
-	printf("0");
-	printf("\n");
+		else
+		{
+			str[pos - 1] = nb;
+			pos++;
+			ft_printloop(n, str, pos, flg);
+			pos--;
+		}
+		nb++;
 	}
 }
 
-int		main(void)
+void	ft_print(char str[], int pos, int nb, int *flg)
 {
-	ft_print_combn(3);
+	int		i;
+
+	if (*flg)
+	{
+		write(1, ", ", 2);
+	}
+	*flg = 1;
+	i = 0;
+	while (i < pos - 1)
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
+	write(1, &nb, 1);
+}

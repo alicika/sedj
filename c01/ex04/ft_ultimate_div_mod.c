@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/22 17:33:32 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/24 19:34:10 by rkasubuc         ###   ########.fr       */
+/*   Created: 2020/09/24 22:31:13 by rkasubuc          #+#    #+#             */
+/*   Updated: 2020/09/24 22:59:15 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int		ft_ft(int *nbr)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int i;
+	int temp;
 
-	i = 42;
-	nbr = &i;
-	printf("%d\n", *nbr);
+	temp = *a;
+	*a = *a / *b;
+	*b = temp % *b;
 }

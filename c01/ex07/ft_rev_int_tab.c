@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/22 17:33:32 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/24 19:34:10 by rkasubuc         ###   ########.fr       */
+/*   Created: 2020/09/25 00:00:11 by rkasubuc          #+#    #+#             */
+/*   Updated: 2020/09/25 23:51:40 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int		ft_ft(int *nbr)
+void	ft_rev_int_tab(int *tab, int size)
 {
+	int temp;
 	int i;
 
-	i = 42;
-	nbr = &i;
-	printf("%d\n", *nbr);
+	i = 0;
+	while (i < (size / 2))
+	{
+		temp = tab[i];
+		tab[i] = tab[size - i - 1];
+		tab[size - i - 1] = temp;
+		i++;
+	}
 }

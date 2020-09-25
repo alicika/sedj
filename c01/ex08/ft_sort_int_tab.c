@@ -1,22 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/22 17:33:32 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/24 19:34:10 by rkasubuc         ###   ########.fr       */
+/*   Created: 2020/09/26 00:02:09 by rkasubuc          #+#    #+#             */
+/*   Updated: 2020/09/26 00:09:08 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int		ft_ft(int *nbr)
+void	ft_sort_int_tab(int *tab, int size)
 {
 	int i;
+	int j;
+	int temp;
 
-	i = 42;
-	nbr = &i;
-	printf("%d\n", *nbr);
+	i = 0;
+	while (i < size)
+	{
+		j = size - 1;
+		while (j > i)
+		{
+			if (tab[j] < tab[j - 1])
+			{
+				temp = tab[j];
+				tab[j] = tab[j - 1];
+				tab[j - 1] = temp;
+			}
+			j--;
+		}
+		i++;
+	}
 }

@@ -6,7 +6,7 @@
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/22 14:46:22 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/22 14:46:30 by rkasubuc         ###   ########.fr       */
+/*   Updated: 2020/09/23 22:41:46 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putchar(char c)
 		write(1, &c, 1);
 }
 
-int		ft_print_comb2(void)
+void	ft_print_comb2(void)
 {
 	int hako[2];
 

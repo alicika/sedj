@@ -7,3 +7,6 @@
 [submodule "rush01"]
 	path = rush01
 	url = git@vogsphere-v2.42tokyo.jp:vogsphere/intra-uuid-57430c9c-1a15-41e8-a2f9-349432006a9a-3315185
+[submodule "rush02"]
+	path = rush02
+	url = git@vogsphere-v2.42tokyo.jp:vogsphere/intra-uuid-855d8b1f-8852-4d8a-8402-d2e86cca44c6-3324941

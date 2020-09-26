@@ -6,11 +6,9 @@
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/22 17:33:32 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/24 19:34:10 by rkasubuc         ###   ########.fr       */
+/*   Updated: 2020/09/26 00:57:09 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int		ft_ft(int *nbr)
 {

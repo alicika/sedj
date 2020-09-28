@@ -5,3 +5,6 @@
 	path = shell00
 	url = git@vogsphere-v2.42tokyo.jp:vogsphere/intra-uuid-662a7e43-86bb-4de4-85d3-42bb621876dc-3311257
 
+[submodule "rush02"]
+	path = rush02
+	url = git@vogsphere-v2.42tokyo.jp:vogsphere/intra-uuid-855d8b1f-8852-4d8a-8402-d2e86cca44c6-3324941

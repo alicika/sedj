@@ -1,19 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   trimspace_input.c                                  :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/26 15:52:12 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/26 16:38:27 by rkasubuc         ###   ########.fr       */
+/*   Created: 2020/09/24 23:42:29 by rkasubuc          #+#    #+#             */
+/*   Updated: 2020/09/25 20:06:17 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-trimspace_input(char *a)
+char	*ft_strcpy(char *dest, char *src)
 {
-	char *first[]
-	char *second[]
-	char *third[]
-	
+	int i = 0;
+	while (1)
+	{
+		dest[i] = src[i];
+		if (dest[i] == '\0')
+		{
+			break;
+		}
+		i++;
+	}
+	return dest;
 }
+
+

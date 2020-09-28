@@ -8,8 +8,8 @@ Library/*
 !.gitkeep
 /shell01/ex05/*
 
-CMakelists.txt
+*/CMakelists.txt
 cmake-build-debug/*
-main.c
+*/main.c
 .vscode/*
 

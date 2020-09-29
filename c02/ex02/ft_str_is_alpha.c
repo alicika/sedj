@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/29 22:46:41 by rkasubuc          #+#    #+#             */
+/*   Updated: 2020/09/29 22:52:04 by rkasubuc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 int		ft_str_is_alpha(char *str)
 {
 	int i;
@@ -5,10 +17,10 @@ int		ft_str_is_alpha(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ((str[i] >= 'a' && str[i] <=  'z') || (str[i] >= 'A' && str[i] <= 'Z'))
-		{
+		if (str[i] >= 'a' && str[i] <= 'z')
 			str++;
-		}
+		else if (str[i] >= 'A' && str[i] <= 'Z')
+			str++;
 		else
 		{
 			return (0);

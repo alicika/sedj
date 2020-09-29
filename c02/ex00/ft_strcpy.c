@@ -6,23 +6,23 @@
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/24 23:42:29 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/25 20:06:17 by rkasubuc         ###   ########.fr       */
+/*   Updated: 2020/09/29 23:30:37 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	int i = 0;
+	int	i;
+
+	i = 0;
 	while (1)
 	{
 		dest[i] = src[i];
 		if (dest[i] == '\0')
 		{
-			break;
+			break ;
 		}
 		i++;
 	}
 	return (dest);
 }
-
-

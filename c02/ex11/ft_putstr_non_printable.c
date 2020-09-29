@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/29 23:00:12 by rkasubuc          #+#    #+#             */
+/*   Updated: 2020/09/29 23:28:49 by rkasubuc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putchar(char str)
@@ -7,7 +19,7 @@ void	ft_putchar(char str)
 
 void	ft_puthex(char c)
 {
-	char hex[16] = "0123456789abcdef";
+	static char hex[16] = "0123456789abcdef";
 
 	ft_putchar(hex[c / 16]);
 	ft_putchar(hex[c % 16]);
@@ -20,7 +32,7 @@ void	ft_putstr_non_printable(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ((0 <= str[i]) && (str[i] < 32) || str[i] == 127)
+		if ((0 <= str[i] && str[i] < 32) || str[i] == 127)
 		{
 			ft_putchar('\\');
 			ft_puthex(str[i]);
@@ -29,10 +41,5 @@ void	ft_putstr_non_printable(char *str)
 			ft_putchar(str[i]);
 		i++;
 	}
-}
-
-int main()
-{
-	char c[] = "Coucou\\ntu vas bien ?";
-	ft_putstr_non_printable(c);
+	ft_putchar('\n');
 }

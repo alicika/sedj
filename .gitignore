@@ -1,5 +1,4 @@
 .ssh/*
-../.idea
 .zshrc
 .viminfo
 .vimrc
@@ -8,8 +7,9 @@ Library/*
 !.gitkeep
 /shell01/ex05/*
 
+*/.idea/*
 */CMakelists.txt
-cmake-build-debug/*
+*/cmake-build-debug/*
 */main.c
 .vscode/*
-
+clion-log.txt

@@ -1,5 +1,6 @@
 .ssh/*
 .zshrc
+.vim/*
 .viminfo
 .vimrc
 .gitconfig

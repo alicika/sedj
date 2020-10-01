@@ -6,7 +6,7 @@
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 22:46:41 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/29 22:52:04 by rkasubuc         ###   ########.fr       */
+/*   Updated: 2020/10/01 19:24:36 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ int		ft_str_is_alpha(char *str)
 	while (str[i] != '\0')
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
-			str++;
+			i++;
 		else if (str[i] >= 'A' && str[i] <= 'Z')
-			str++;
+			i++;
 		else
 		{
 			return (0);

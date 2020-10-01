@@ -6,7 +6,7 @@
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 22:54:06 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/29 22:54:09 by rkasubuc         ###   ########.fr       */
+/*   Updated: 2020/10/01 19:26:10 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_str_is_lowercase(char *str)
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			str++;
+			i++;
 		}
 		else
 		{

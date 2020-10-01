@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/29 22:55:56 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/29 22:55:59 by rkasubuc         ###   ########.fr       */
+/*   Created: 2020/10/02 02:57:21 by rkasubuc          #+#    #+#             */
+/*   Updated: 2020/10/02 07:47:21 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,9 @@ char	*ft_strupcase(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ('a' <= str[i] <= 'z')
+		if ('a' <= str[i] && str[i] <= 'z')
 			str[i] = str[i] - 32;
+		i++;
 	}
 	return (str);
 }

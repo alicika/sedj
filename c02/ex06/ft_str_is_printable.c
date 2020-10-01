@@ -6,7 +6,7 @@
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 22:55:10 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/29 23:34:32 by rkasubuc         ###   ########.fr       */
+/*   Updated: 2020/10/01 19:28:15 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ int		ft_str_is_printable(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (33 <= str[i] && str[i] <= 126)
+		if (' ' <= str[i] && str[i] <= '~')
 		{
-			str++;
+			i++;
 		}
 		else
 		{

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/29 22:54:52 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/29 22:54:54 by rkasubuc         ###   ########.fr       */
+/*   Created: 2020/10/02 07:42:20 by rkasubuc          #+#    #+#             */
+/*   Updated: 2020/10/02 07:42:28 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_str_is_lowercase(char *str)
+int		ft_str_is_uppercase(char *str)
 {
 	int i;
 
@@ -19,7 +19,7 @@ int		ft_str_is_lowercase(char *str)
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
-			str++;
+			i++;
 		}
 		else
 		{

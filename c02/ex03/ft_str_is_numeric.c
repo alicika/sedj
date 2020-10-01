@@ -6,7 +6,7 @@
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 22:52:49 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/29 22:53:24 by rkasubuc         ###   ########.fr       */
+/*   Updated: 2020/10/01 19:25:18 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_str_is_numeric(char *str)
 	{
 		if (str[i] >= '1' && str[i] <= '9')
 		{
-			str++;
+			i++;
 		}
 		else
 		{

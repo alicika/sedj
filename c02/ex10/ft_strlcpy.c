@@ -6,25 +6,27 @@
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 22:59:32 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/29 22:59:35 by rkasubuc         ###   ########.fr       */
+/*   Updated: 2020/10/01 23:18:15 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	int i;
+	unsigned int i;
+	unsigned int j;
 
 	i = 0;
-	if (size == 0)
-		return (i);
-	if (src[i] != '\0')
+	j = 0;
+	while (src[i])
+		i++;
+	if (size)
 	{
-		while (src[i] != '\0' && i < size - 1)
+		while (src[j] && j < size - 1)
 		{
-			dest[i] = src[i];
-			i++;
+			dest[j] = src[j];
+			j++;
 		}
-		dest[i] = '\0';
+		dest[j] = '\0';
 	}
-	return (i);
+	return ((unsigned int)i);
 }

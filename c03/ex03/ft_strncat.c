@@ -6,26 +6,24 @@
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/30 11:45:05 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/10/01 08:58:57 by rkasubuc         ###   ########.fr       */
+/*   Updated: 2020/10/02 01:46:40 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
 	unsigned int	i;
-	char			*dest2;
+	unsigned int	j;
 
-	dest2 = dest;
 	i = 0;
-	while (*dest != '\0')
-		dest++;
-	while (i < nb && *src != '\0')
-	{
-		*dest = *src;
-		dest++;
-		src++;
+	j = 0;
+	while (dest[i] != '\0')
 		i++;
+	while (j < nb && src[j] != '\0')
+	{
+		dest[i + j] = src[j];
+		j++;
 	}
-	*dest = '\0';
-	return (dest2);
+	dest[i + j] = '\0';
+	return (dest);
 }

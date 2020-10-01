@@ -6,7 +6,7 @@
 /*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 22:56:19 by rkasubuc          #+#    #+#             */
-/*   Updated: 2020/09/29 22:56:23 by rkasubuc         ###   ########.fr       */
+/*   Updated: 2020/10/02 07:48:06 by rkasubuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,9 @@ char	*ft_strlowcase(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ('A' <= str[i] <= 'Z')
+		if ('A' <= str[i] && str[i] <= 'Z')
 			str[i] = str[i] + 32;
+		i++;
 	}
 	return (str);
 }

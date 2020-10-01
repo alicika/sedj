@@ -1,4 +1,17 @@
-int ft_strcmp(char *s1, char *s2)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/30 11:31:36 by rkasubuc          #+#    #+#             */
+/*   Updated: 2020/09/30 22:53:24 by rkasubuc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int	ft_strcmp(char *s1, char *s2)
+
 {
 	int i;
 
@@ -11,7 +24,6 @@ int ft_strcmp(char *s1, char *s2)
 	}
 	return (s1[i] - s2[i]);
 }
-
 
 #include <stdio.h>
 #include <string.h>

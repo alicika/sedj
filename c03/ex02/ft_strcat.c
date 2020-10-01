@@ -1,28 +1,41 @@
-char	*ft_strcat(char *dest, char *src)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rkasubuc <rkasubuc@student.42tokyo.>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/30 11:35:13 by rkasubuc          #+#    #+#             */
+/*   Updated: 2020/09/30 22:58:32 by rkasubuc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int		slen(char *c)
 {
 	int i;
-	int j;
 
 	i = 0;
-	j = 0;
-	while (dest[i])
+	while (c[i] != '\0')
 		i++;
-	while (src[j])
-	{
-		dest[i] = src[j];
-		j++;
-	}
-	dest[i] = '\0';
-		return (dest);
+	return (i);
 }
 
-#include <stdio.h>
-#include <string.h>
-int main()
+char	*ft_strcat(char *dest, char *src)
 {
-	char test1[256] = "abc123";
-	char test2[256] = "abc1234";
-	//printf("%s\n", strcat(test1, test2));
-	printf("%s\n", ft_strcat(test1, test2));
-	return 0;
+	int d;
+	int s;
+	int a;
+
+	d = slen(dest);
+	s = slen(src);
+	a = 0;
+	while (s > 0)
+	{
+		dest[d] = src[a];
+		d++;
+		a++;
+		s--;
+	}
+	dest[d] = '\0';
+	return (dest);
 }

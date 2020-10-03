@@ -23,3 +23,14 @@ int		ft_strncmp(char *s1, char *s2, unsigned int n)
 	}
 	return (*s1 - *s2);
 }
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char test1[256] = "abc123";
+	char test2[256] = "abc1234";
+	//printf("%d\n", strcmp(test1, test2));
+	printf("%d\n", ft_strncmp(test1, test2, 10));
+	return 0;
+}

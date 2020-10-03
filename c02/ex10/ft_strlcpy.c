@@ -12,21 +12,19 @@
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	unsigned int i;
-	unsigned int j;
+	int i;
 
 	i = 0;
-	j = 0;
-	while (src[i])
-		i++;
-	if (size)
+	if (size == 0)
+		return (i);
+	if (src[i] != '\0')
 	{
-		while (src[j] && j < size - 1)
+		while (src[i] != '\0' && i < size - 1)
 		{
-			dest[j] = src[j];
-			j++;
+			dest[i] = src[i];
+			i++;
 		}
-		dest[j] = '\0';
+		dest[i] = '\0';
 	}
-	return ((unsigned int)i);
+	return (i);
 }

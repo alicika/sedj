@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncat(char *dest, char *src, unsigned int nb)
+char*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	unsigned int	i;
-	unsigned int	j;
+	unsigned int i;
+	unsigned int j;
 
 	i = 0;
 	j = 0;
@@ -26,4 +26,14 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	}
 	dest[i + j] = '\0';
 	return (dest);
+}
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char test1[256] = "abc123";
+	char test2[256] = "abcdef";
+	//printf("%d\n", strcmp(test1, test2));
+	printf("%s\n", ft_strncat(test1, test2, -1));
+	return 0;
 }

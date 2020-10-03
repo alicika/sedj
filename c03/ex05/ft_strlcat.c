@@ -33,14 +33,22 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	i = 0;
 	if (size > d)
 	{
-		while (i < size - 1 - d && src[i])
-		{
-			dest[d + i] = src[i];
-			i++;
-		}
-		dest[i] = '\0';
-		return (d + s);
+		dest[a + d] = src[a];
+		a++;
 	}
-	else
-		return (s + size);
+	dest[a + d] = '\0';
+	if (size < d)
+		return (d + a + 1);
+	return (d + s);
+}
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+		char test1[256] = "123";
+			char test2[256] = "asd";
+
+				printf("%u\n", ft_strlcat(test1, test2, 10));
+					return 0;
 }
